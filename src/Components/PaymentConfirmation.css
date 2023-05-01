@@ -1,0 +1,76 @@
+.payment-confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .success-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #d1f7c4;
+    border-radius: 5px;
+  }
+  
+  .success-heading {
+    font-size: 36px;
+    color: #28a745;
+  }
+  
+  .success-message {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .success-submessage {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #4c4c4c;
+  }
+  
+  .success-sms-message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #4c4c4c;
+  }
+  
+  .failure-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8d7da;
+    border-radius: 5px;
+  }
+  
+  .failure-heading {
+    font-size: 36px;
+    color: #dc3545;
+  }
+  
+  .failure-message {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .failure-submessage {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #4c4c4c;
+  }
+  
+  .retry-btn {
+    background-color: #00a79d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .failure-support-message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #4c4c4c;
+  }
+  

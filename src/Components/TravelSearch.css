@@ -1,0 +1,436 @@
+/* Primary color */
+:root {
+  --primary-color: #00a79d;
+}
+
+.travel-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  justify-content: center;
+}
+
+
+.travel-search-toggle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.travel-search-toggle-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  color: #333333;
+}
+
+.travel-search-toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+}
+
+.travel-search-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 1rem;
+}
+
+.travel-search-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.6rem;
+  width: 1.6rem;
+  left: 0.2rem;
+  bottom: 0.2rem;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.travel-search-toggle-switch input:checked + .travel-search-toggle-slider {
+  background-color: var(--primary-color);
+}
+
+.travel-search-toggle-switch input:checked + .travel-search-toggle-slider:before {
+  transform: translateX(1.8rem);
+}
+
+.travel-search-toggle-label:nth-child(1) {
+  color: var(--primary-color);
+}
+
+.travel-search-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+.travel-search-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.travel-search-input-container input[type="text"],
+.travel-search-input-container input[type="date"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.travel-search-input-container input[type="text"]::placeholder,
+.travel-search-input-container input[type="date"]::placeholder {
+  color: #aaaaaa;
+}
+
+.travel-search-button {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.travel-search-button:hover {
+  background-color: #007f76;
+}
+
+
+
+
+
+.multi-city-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.multi-city-search-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.multi-city-search-index {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  color: #ffffff;
+}
+
+
+
+
+
+
+.multi-city-search-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+
+
+
+.multi-city-search-inputs input {
+  width: 20rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  border: none;
+}
+
+.multi-city-search-add button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: #20b2aa;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.multi-city-search-remove button {
+  background-color: #ff0000;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  margin-left: 1rem;
+}
+
+.multi-city-search-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.multi-city-search-inputs:before {
+  content: attr(data-index);
+  position: absolute;
+  left: -20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+.travel-search-button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  color: #20b2aa;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.travel-search-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+}
+
+.travel-search-menu-item {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.travel-search-menu-item.active,
+.travel-search-menu-item:hover {
+  background-color: #00a79d;
+  color: #ffffff;
+}
+
+
+.travel-search-menu-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px; /* Adjust the value to change the degree of roundness */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #444;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.travel-search-menu-item.active {
+  background-color: #0ce9cb;
+  color: #fff;
+}
+
+
+.multi-city-search-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+ 
+  order: -1; /* Change the order to -1 to display the index on the left */
+}
+
+.travel-search-num-people input::-webkit-inner-spin-button,
+.travel-search-num-people input::-webkit-outer-spin-button {
+  height: 30px;
+  width: 30px;
+  color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.travel-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  justify-content: center;
+}
+
+.multi-city-search-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.multi-city-search-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.multi-city-search-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.travel-search-label {
+  margin-bottom: 0.25rem;
+}
+
+.multi-city-search-remove {
+  margin-left: auto;
+}
+
+.travel-search-button {
+  margin-top: 1rem;
+}
+
+.multi-city-search-index {
+  margin-right: 1rem;
+  text-align: center;
+}
+.travel-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  justify-content: center;
+}
+
+.multi-city-search-input-container {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.multi-city-search-index {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.multi-city-search-remove {
+  margin-left: auto;
+}
+
+.multi-city-search-add button {
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+.travel-search-num-people {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.travel-search-num-people label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+.travel-search-num-people input {
+  width: 100px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #444;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.travel-search-num-people input:focus {
+  border-color: #00a79d;
+}
